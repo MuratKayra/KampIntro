@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace YirmiBirYirmiYedi
@@ -22,7 +23,17 @@ namespace YirmiBirYirmiYedi
             Console.WriteLine();
             Console.WriteLine("Params");
             Console.WriteLine(Add4(1,2,3,4,5,6));
-            
+
+            Dictionary<string, int> dictionary = new Dictionary<string, int>();
+            dictionary.Add("Murat", 28);
+            dictionary.Add("Mustafa", 27);
+            dictionary.Add("Merve", 23);
+
+            foreach (var item in dictionary)
+            {
+                Console.WriteLine(item);
+            }
+
             Console.ReadLine();
         }
         static void Add()
@@ -56,6 +67,5 @@ namespace YirmiBirYirmiYedi
         {
             return numbers.Sum();
         }
-        
     }
 }
